@@ -1,25 +1,19 @@
 import React from 'react';
-import Card from './Card';
+import ItemCard from './ItemCard';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 
 const ResultsList = ({ listOfResults }) => {
     let resultItem = listOfResults.map((item, i) => {
-        return (
-            <div key={(i)}>
-                <div>
-                    { item.name }
-                </div>
-                <div>
-                    { item.price }
-                </div>
-            </div>         
+        return (   
+            <ItemCard key= {(i)} name={ item.name } price={ item.price } />   
         )
     });
 
     return (
-        <div>
+        <CardColumns className="resultsList">
             { resultItem }
-        </div>
+        </CardColumns>
     )
 }
 

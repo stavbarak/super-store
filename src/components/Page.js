@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import {InputGroup, FormControl }from 'react-bootstrap';
+
 import { getItems } from '../api';
 import ResultsList from './ResultsList';
 
 
-class Search extends Component {
+class Page extends Component {
     state = {
         data: [],
         query: '',
@@ -27,19 +29,23 @@ class Search extends Component {
     }
 
     render() {
-        const { data, query } = this.state;
-        
-        
+        const { data, query, loaded } = this.state;
         const filteredData = this.filterData(data, query) || null;
-        console.log(filteredData);
         return (
-            <div>
-                <input onChange = {(evt) => this.handleSearchChange(evt) } />
-                {/* <button>Find</button> */}
-                {this.state.loaded ? <ResultsList listOfResults={data}/> : ''}
+            <div>               
+                <div className="searchContainer">
+                    <InputGroup className="mb-3">
+                        <FormControl
+                        placeholder="Search for product"
+                        aria-label="Search"
+                        onChange = {(evt) => this.handleSearchChange(evt) }
+                        />
+                    </InputGroup>
+                </div>
+                {loaded ? <ResultsList listOfResults={ filteredData }/> : ''}
             </div>
         )
     }
 }
 
-export default Search;
+export default Page;
