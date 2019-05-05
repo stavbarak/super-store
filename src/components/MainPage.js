@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {InputGroup, FormControl }from 'react-bootstrap';
-
-import { getItems } from '../api';
 import ResultsList from './ResultsList';
 
 
@@ -16,10 +14,22 @@ class MainPage extends Component {
         }
     }
 
-    componentDidMount = async () => {
-        const data = await getItems('');
-        console.log(data)
-        this.setState({ data, loaded: true })
+    componentDidMount = () => {
+        const FETCH_URL = 'http://www.mocky.io/v2/5ccf3f8f300000ce1652c4bc';
+        fetch(FETCH_URL, {
+          method: 'GET'
+        })
+        .then(response => response.json())
+        .then(json => {
+            console.log(json)
+          this.setState({
+            data: json,
+            loaded: true
+          })
+        })
+        .catch(err => {
+              console.log(err)
+          })
     }
 
     handleSearchChange = (evt) => {
@@ -28,9 +38,12 @@ class MainPage extends Component {
 
     filterData = (data, query) => {
         const q = query.toLowerCase();
-        return data.filter (
-            d => d.name.indexOf(q) >-1
-        )
+        if (data) {
+            return data.filter (
+                d => d.name.indexOf(q) >-1
+            )
+        }
+        
     }
 
     render() {

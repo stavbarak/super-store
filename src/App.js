@@ -6,9 +6,6 @@ import ItemInfo from './components/ItemInfo';
 
 function App() {
   return (
-    // <div className="App">
-    //   <MainPage />
-    // </div>
     <BrowserRouter>
         <Switch>
           <Route path="/:id" component={ ItemInfo } />

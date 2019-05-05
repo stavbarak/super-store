@@ -15,15 +15,3 @@ export const getItems = query => {
 
     })
 }
-
-// export const getSpecificItem =  (data, id) => {
-//     return new Promise((resolve, reject) => {
-//         const currentItem = data.find((element) => {
-//             return element.id === id ;
-//           });
-//         setTimeout(() => {
-//             resolve(currentItem);
-//         })
-
-//     })
-// }
