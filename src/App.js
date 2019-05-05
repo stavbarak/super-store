@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Search from './components/Page';
+import MainPage from './components/MainPage';
 
 function App() {
   return (
     <div className="App">
-      <Search />
+      <MainPage />
     </div>
   );
 }

@@ -5,11 +5,15 @@ import { getItems } from '../api';
 import ResultsList from './ResultsList';
 
 
-class Page extends Component {
-    state = {
-        data: [],
-        query: '',
-        loaded: false
+class MainPage extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            data: [],
+            query: '',
+            loaded: false
+        }
     }
 
     componentDidMount = async () => {
@@ -48,4 +52,4 @@ class Page extends Component {
     }
 }
 
-export default Page;
+export default MainPage;
