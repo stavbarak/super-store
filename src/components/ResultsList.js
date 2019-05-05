@@ -6,7 +6,13 @@ import CardColumns from 'react-bootstrap/CardColumns';
 const ResultsList = ({ listOfResults }) => {
     let resultItem = listOfResults.map((item, i) => {
         return (   
-            <ItemCard key= {(i)} id={i} name={ item.name } price={ item.price } />   
+            <ItemCard 
+            key= {(i)} 
+            id={ item.id } 
+            image={ item.image } 
+            name={ item.name } 
+            price={ item.price } 
+            />   
         )
     });
 

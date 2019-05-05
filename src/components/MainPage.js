@@ -18,6 +18,7 @@ class MainPage extends Component {
 
     componentDidMount = async () => {
         const data = await getItems('');
+        console.log(data)
         this.setState({ data, loaded: true })
     }
 

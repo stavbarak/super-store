@@ -1,36 +1,51 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
+import React, { Component }  from 'react';
+// import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
+// import { getItems, getSpecificItem } from '../api';
 
-const ItemInfo = () => {
+class ItemInfo extends Component {
 
-    return (
-        <Card>
-            <Card.Header>
-                <Nav variant="tabs" defaultActiveKey="#first">
+    constructor(props) {
+        super(props)
+        this.state = {
+            currentItem: null
+        }
+    }
+
+    componentDidMount = async () => {
+        
+        // TODO: either use a real API and make another call here with the id on the same data, 
+        // or save the data to redux so this component can access it too.
+
+        // const { id } = this.props.match.params;
+        // const currentItem = await getSpecificItem(id);
+        // this.setState({ currentItem })
+        // console.log(currentItem)
+    }
+
+    render() {
+        return (
+            // bootstrap nav example
+            <Nav justify variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>
-                    <Nav.Link href="#first">Active</Nav.Link>
+                    <Nav.Link href="/home">Active</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#link">Link</Nav.Link>
+                    <Nav.Link eventKey="link-1">Loooonger NavLink</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#disabled" disabled>
+                    <Nav.Link eventKey="link-2">Link</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="disabled" disabled>
                     Disabled
                     </Nav.Link>
                 </Nav.Item>
-                </Nav>
-            </Card.Header>
-            <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                With supporting text below as a natural lead-in to additional content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>
-    ) 
+            </Nav>
+        ) 
+    }
+
 }
 
 export default ItemInfo;
