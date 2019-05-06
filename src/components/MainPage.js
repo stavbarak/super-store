@@ -40,7 +40,7 @@ class MainPage extends Component {
         const q = query.toLowerCase();
         if (data) {
             return data.filter (
-                d => d.name.indexOf(q) >-1
+                d => d.name.toLowerCase().indexOf(q) >-1
             )
         }
         
@@ -56,7 +56,7 @@ class MainPage extends Component {
                         <FormControl
                         placeholder="Search for product"
                         aria-label="Search"
-                        onChange = {(evt) => this.handleSearchChange(evt) }
+                        onChange = {this.handleSearchChange}
                         />
                     </InputGroup>
                 </div>
