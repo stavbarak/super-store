@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
-import {InputGroup, FormControl }from 'react-bootstrap';
+import { InputGroup, FormControl }from 'react-bootstrap';
 import ResultsList from './ResultsList';
 
 
 class MainPage extends Component {
 
+    
+
     constructor(props) {
         super(props)
         this.state = {
             data: [],
+            filteredData: [],
             query: '',
-            loaded: false
+            loaded: false,
         }
     }
 
-    componentDidMount = () => {
-        const FETCH_URL = 'http://www.mocky.io/v2/5ccf3f8f300000ce1652c4bc';
+    componentDidMount = () => {       
+        const FETCH_URL = 'http://www.mocky.io/v2/5cd864f4300000a22a74cda3';
+
         fetch(FETCH_URL, {
-          method: 'GET'
+          method: 'GET',
         })
+
         .then(response => response.json())
         .then(json => {
-            console.log(json)
+          console.log(json)
           this.setState({
             data: json,
             loaded: true
@@ -33,7 +38,12 @@ class MainPage extends Component {
     }
 
     handleSearchChange = (evt) => {
-        this.setState({ query: evt.target.value })
+        const { data, query } = this.state;
+        const filteredData = this.filterData(data, query);
+        this.setState({ 
+            query: evt.target.value, 
+            filteredData
+        })
     }
 
     filterData = (data, query) => {
@@ -42,13 +52,19 @@ class MainPage extends Component {
             return data.filter (
                 d => d.name.toLowerCase().indexOf(q) >-1
             )
-        }
-        
+        }      
     }
 
     render() {
-        const { data, query, loaded } = this.state;
-        const filteredData = this.filterData(data, query) || null;
+        const { data, filteredData, query, loaded } = this.state;
+        let presentedData;
+        if (loaded && query.length > 0) {
+            presentedData = <ResultsList listOfResults={ filteredData }/>;
+        } else if (loaded && !query.length > 0) {
+            presentedData = <ResultsList listOfResults={ data }/>;
+        } else {
+            presentedData = null;
+        }
         return (
             <div>               
                 <div className="searchContainer">
@@ -60,7 +76,7 @@ class MainPage extends Component {
                         />
                     </InputGroup>
                 </div>
-                {loaded ? <ResultsList listOfResults={ filteredData }/> : ''}
+                { presentedData }
             </div>
         )
     }
