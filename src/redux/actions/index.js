@@ -4,7 +4,7 @@ export const FETCH_DATA = 'FETCH_DATA';
 export const REQUEST_DATA = 'REQUEST_DATA';
 export const DATA_FETCHED = 'DATA_FETCHED';
 
-const API_URL = 'http://www.mocky.io/v2/5cd864f4300000a22a74cda3';
+const API_URL = 'http://www.mocky.io/v2/5cdaa2e93000005e0068c8bf';
 
 
 export function fetchData(dispatch) {
