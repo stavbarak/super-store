@@ -1,50 +1,33 @@
 import React, { Component }  from 'react';
+import { connect } from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
+import { fetchDataItem } from '../redux/actions';
+
 
 class ItemInfo extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            currentItem: null,
-            activeTabContent: null,
-            firstActive: true
-        }
+            activeTabContent: null        }
     }
 
     componentDidMount = () => {
         const { id } = this.props.match.params;
-        const FETCH_URL = 'http://www.mocky.io/v2/5cdaa2e93000005e0068c8bf';
-        fetch(FETCH_URL, {
-          method: 'GET'
-        })
-        .then(response => response.json())
-        .then(json => {
-        const currentItem = json.find((element) => {
-            return element.id === id ;
-            });
-          this.setState({
-            currentItem: currentItem,
-            loaded: true
-          })
-        })
-        .catch(err => {
-              console.log(err)
-          })
+        const { fetchDataItem } = this.props;
+        fetchDataItem(id);
     }
 
     switchTab(selectedKey) {
         this.setState({
-            activeTabContent: selectedKey,
-            firstActive: false
-        })
+            activeTabContent: selectedKey        })
     }
 
     render() {
-        const { currentItem, activeTabContent } = this.state;
-        if(currentItem!==null) {
+        const { activeTabContent } = this.state;
+        const { currentItem } = this.props;
             return (
                 <Card className="item-info col-md-8">           
                 <Card.Header>
@@ -75,12 +58,16 @@ class ItemInfo extends Component {
                 <Button className="buy-btn">Buy Now</Button>         
             </Card>
            )
-        }
-        else {
-            return null;
-        }
     }
 
 }
 
-export default ItemInfo;
+const mapStateToProps = (state) => ({
+    currentItem: state.currentItem
+  })
+
+  const mapDispatchToProps = dispatch => ({
+    fetchDataItem: (id) => dispatch(fetchDataItem(id))
+  })
+  
+  export default connect(mapStateToProps, mapDispatchToProps) (ItemInfo)
