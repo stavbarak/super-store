@@ -1,44 +1,28 @@
 import React, { Component } from 'react';
 import { InputGroup, FormControl }from 'react-bootstrap';
+import { connect } from 'react-redux';
 import ResultsList from './ResultsList';
+import { fetchData } from '../redux/actions';
 
 
 class MainPage extends Component {
 
-    
-
     constructor(props) {
         super(props)
         this.state = {
-            data: [],
             filteredData: [],
-            query: '',
-            loaded: false,
+            query: ''
         }
     }
 
-    componentDidMount = () => {       
-        const FETCH_URL = 'http://www.mocky.io/v2/5cd864f4300000a22a74cda3';
-
-        fetch(FETCH_URL, {
-          method: 'GET',
-        })
-
-        .then(response => response.json())
-        .then(json => {
-          console.log(json)
-          this.setState({
-            data: json,
-            loaded: true
-          })
-        })
-        .catch(err => {
-              console.log(err)
-          })
+    componentDidMount = () => {              
+        const { fetchData } = this.props;
+        fetchData();
     }
 
     handleSearchChange = (evt) => {
-        const { data, query } = this.state;
+        const { query } = this.state;
+        const { data } = this.props;
         const filteredData = this.filterData(data, query);
         this.setState({ 
             query: evt.target.value, 
@@ -56,7 +40,10 @@ class MainPage extends Component {
     }
 
     render() {
-        const { data, filteredData, query, loaded } = this.state;
+        const { data, loaded } = this.props;
+        const { filteredData, query } = this.state;
+
+
         let presentedData;
         if (loaded && query.length > 0) {
             presentedData = <ResultsList listOfResults={ filteredData }/>;
@@ -82,4 +69,13 @@ class MainPage extends Component {
     }
 }
 
-export default MainPage;
+const mapStateToProps = (state) => ({
+    data: state.data,
+    loaded: state.loaded
+  })
+
+  const mapDispatchToProps = dispatch => ({
+    fetchData: () => dispatch(fetchData)
+  })
+  
+  export default connect(mapStateToProps, mapDispatchToProps) (MainPage)

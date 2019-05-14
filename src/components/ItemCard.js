@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
-const ItemCard = ( { name, price, image, id } ) => {
+const ItemCard = ( { name, image, id, price } ) => {
     return (
         <Card>           
             <Card.Header>
