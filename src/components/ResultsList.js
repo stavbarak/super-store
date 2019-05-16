@@ -8,10 +8,10 @@ const ResultsList = ({ listOfResults }) => {
         return (   
             <ItemCard 
             key= {(i)} 
-            id={ item.id } 
-            image={ item.image } 
-            name={ item.name } 
-            price={ item.price } 
+            id={ item.itemId } 
+            image={ item.image.imageUrl } 
+            name={ item.title } 
+            price={ `${item.price.value} ${item.price.currency}` } 
             />   
         )
     });

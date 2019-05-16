@@ -39,6 +39,10 @@
   color: #000;
 }
 
+.btn-primary, .btn-primary:hover {
+  color: #fff!important
+}
+
 .card a:hover {
   color: #007bff;
   text-decoration: none;

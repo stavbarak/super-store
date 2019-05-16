@@ -5,14 +5,14 @@ const InitialState = {
     // filteredData: [],
     loaded: false,
     // query: '',
-    currentItem: {}
+    currentItem: null
 }
 
 const rootReducer = (state = InitialState, action) => {
     switch(action.type) {
         case DATA_FETCHED:
             return {
-                ...state, 
+                ...state,
                 data: action.payload,
                 loaded: true
             }

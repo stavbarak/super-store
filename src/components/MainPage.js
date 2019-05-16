@@ -34,7 +34,7 @@ class MainPage extends Component {
         const q = query.toLowerCase();
         if (data) {
             return data.filter (
-                d => d.name.toLowerCase().indexOf(q) >-1
+                d => d.title.toLowerCase().indexOf(q) >-1
             )
         }      
     }
@@ -42,7 +42,6 @@ class MainPage extends Component {
     render() {
         const { data, loaded } = this.props;
         const { filteredData, query } = this.state;
-
 
         let presentedData;
         if (loaded && query.length > 0) {
