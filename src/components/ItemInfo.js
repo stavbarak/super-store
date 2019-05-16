@@ -39,7 +39,7 @@ class ItemInfo extends Component {
                 </Card.Header>
                 <Card.Body>
                     <Card.Title>{ currentItem.title }</Card.Title>
-                    {/* <Nav fill defaultActiveKey="#" onSelect={selectedKey => this.switchTab(selectedKey)}>
+                    <Nav fill defaultActiveKey="#" onSelect={selectedKey => this.switchTab(selectedKey)}>
                         <Nav.Item>
                             <Nav.Link  href="#" eventKey={ currentItem.title }>Description</Nav.Link>
                         </Nav.Item>                     
@@ -52,12 +52,12 @@ class ItemInfo extends Component {
                         <Nav.Item>
                             <Nav.Link eventKey={ currentItem.Reviews }>Reviews</Nav.Link>
                         </Nav.Item>
-                    </Nav> */}
+                    </Nav>
                 </Card.Body> 
                 <Card.Body>
-                    {/* <Card.Text>
+                    <Card.Text>
                     { activeTabContent || currentItem.Description }
-                    </Card.Text>   */}
+                    </Card.Text>  
                 </Card.Body>    
                 <Button href={currentItem.itemWebUrl} className="buy-btn">Buy Now</Button>         
             </Card>

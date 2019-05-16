@@ -42,7 +42,7 @@ class MainPage extends Component {
     render() {
         const { data, loaded } = this.props;
         const { filteredData, query } = this.state;
-
+        console.log(data)
         let presentedData;
         if (loaded && query.length > 0) {
             presentedData = <ResultsList listOfResults={ filteredData }/>;
