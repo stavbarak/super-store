@@ -21,33 +21,6 @@ const APP_AUTH = `Bearer ${APP_TOKEN}`;
 const USER_AUTH = `Bearer ${USER_TOKEN}`;
 
 
-const CLIENT_ID = 'StavBara-supersto-SBX-aeaa3d7e6-66b66990';
-const CLIENT_SECRET = 'SBX-eaa3d7e660d8-0812-4dd7-99b0-442e';
-
-/* export function refreshToken() {
-  return fetch('https://api.ebay.com/identity/v1/oauth2/token', {
-    method: 'post',
-    headers: {
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'Authorization': 'Basic ' + btoa(`${CLIENT_ID}:${CLIENT_SECRET}`)
-    },
-    body: qs.stringify({
-    grant_type: 'authorization_code',
-    // parsed from redirect URI after returning from eBay,
-    code: authCode,
-    // this is set in your dev account, also called RuName
-    redirect_uri: '5711ece8-470b-422f-8166-a547c975c753'
-    })
-   })
-   .then(
-    response => response.json(),
-    error => console.log('An error occurred.', error)
-  )
-  .then(json =>
-    console.log(json)
-  )
-} */
-
 export async function fetchData(dispatch) {
     return await fetch(API_URL, {
         method: 'GET',
