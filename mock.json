@@ -1,0 +1,673 @@
+[
+    {
+       "description": "description here",
+       "specs": "specs here", 
+       "shipping": "shipping here",
+       "reviews": "reviews here",
+       "itemId": "v1|333183198678|0",
+       "title": "Jonas Brothers 11x17 2019 happiness promo tour concert poster tickets bebe rexa",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/kscAAOSwTt1czkiw/s-l225.jpg"
+       },
+       "price": {
+          "value": "10.00",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|333183198678|0",
+       "seller": {
+          "username": "celticboy",
+          "feedbackPercentage": "100.0",
+          "feedbackScore": 598
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/kscAAOSwTt1czkiw/$_0.JPG?set_id=880000500F"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "5.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "10.00",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/Jonas-Brothers-11x17-2019-happiness-promo-tour-concert-poster-tickets-bebe-rexa/333183198678?hash=item4d934425d6:g:kscAAOSwTt1czkiw",
+       "itemLocation": {
+          "postalCode": "94947",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "164041"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "104762"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+       "description": "description here",
+       "specs": "specs here", 
+       "shipping": "shipping here",
+       "reviews": "reviews here",
+       "itemId": "v1|301999007005|600797951562",
+       "title": "New: THE ROLLING STONES - Tongue (DISTRESSED) (Black) Rock Concert T-Shirt",
+       "itemGroupHref": "https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=301999007005",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/m/mprnTcy8Ao1zX-iW6ELz2oQ/s-l225.jpg"
+       },
+       "price": {
+          "value": "8.98",
+          "currency": "USD"
+       },
+       "itemGroupType": "SELLER_DEFINED_VARIATIONS",
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|301999007005|600797951562",
+       "seller": {
+          "username": "recrdhed2",
+          "feedbackPercentage": "99.7",
+          "feedbackScore": 113305
+       },
+       "condition": "New without tags",
+       "conditionId": "1500",
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "0.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "8.98",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/New-THE-ROLLING-STONES-Tongue-DISTRESSED-Black-Rock-Concert-T-Shirt/301999007005?hash=item46508b251d:m:mprnTcy8Ao1zX-iW6ELz2oQ",
+       "itemLocation": {
+          "postalCode": "53214",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "15687"
+          },
+          {
+             "categoryId": "29926"
+          },
+          {
+             "categoryId": "1059"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "11450"
+          },
+          {
+             "categoryId": "29923"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "105025"
+          },
+          {
+             "categoryId": "108765"
+          },
+          {
+             "categoryId": "185100"
+          }
+       ],
+       "additionalImages": [
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/301999007005_2_0_1/225x225.jpg"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+       "description": "description here",
+       "specs": "specs here", 
+       "shipping": "shipping here",
+       "reviews": "reviews here",
+       "itemId": "v1|401750818382|0",
+       "title": "Michael Jackson  White Rinestone Glove  FRIDGE Magnet 2.5\" x 3.5\"",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/oL0AAOSwjMBcfhH5/s-l225.jpg"
+       },
+       "price": {
+          "value": "3.99",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|401750818382|0",
+       "seller": {
+          "username": "grayhairman",
+          "feedbackPercentage": "100.0",
+          "feedbackScore": 1314
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/MTAyMlg3MzY=/z/oL0AAOSwjMBcfhH5/$_0.JPG?set_id=8800005007"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "0.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "3.99",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/Michael-Jackson-White-Rinestone-Glove-FRIDGE-Magnet-2-5-x-3-5/401750818382?hash=item5d8a36fe4e:g:oL0AAOSwjMBcfhH5",
+       "itemLocation": {
+          "postalCode": "60505",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "435"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "104762"
+          },
+          {
+             "categoryId": "104957"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "additionalImages": [
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/401750818382_2_0_1/225x225.jpg"
+          },
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/401750818382_3_0_1/225x225.jpg"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+        "description": "description here",
+        "specs": "specs here", 
+        "shipping": "shipping here",
+        "reviews": "reviews here",        
+       "itemId": "v1|283489567786|0",
+       "title": "Slayer 11x17 2019 tour concert poster shirt cd metal lamb of god",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/YpsAAOSwusdcNgAZ/s-l225.jpg"
+       },
+       "price": {
+          "value": "10.00",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|283489567786|0",
+       "seller": {
+          "username": "mozzygurl74",
+          "feedbackPercentage": "99.5",
+          "feedbackScore": 1469
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/YpsAAOSwusdcNgAZ/$_0.JPG?set_id=880000500F"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "5.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "10.00",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/Slayer-11x17-2019-tour-concert-poster-shirt-cd-metal-lamb-of-god/283489567786?hash=item42014b842a:g:YpsAAOSwusdcNgAZ",
+       "itemLocation": {
+          "postalCode": "77546",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "105038"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "105032"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "additionalImages": [
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283489567786_2_0_1/225x225.jpg"
+          },
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283489567786_3_0_1/225x225.jpg"
+          },
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/283489567786_4_0_1/225x225.jpg"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+        "description": "description here",
+        "specs": "specs here", 
+        "shipping": "shipping here",
+        "reviews": "reviews here",
+       "itemId": "v1|301949288026|0",
+       "title": "MOTLEY CRUE - GIRLS GIRLS GIRLS POSTER - 24x36 - 3291",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/32IAAOSwjfhckjod/s-l225.jpg"
+       },
+       "price": {
+          "value": "8.99",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|301949288026|0",
+       "seller": {
+          "username": "starcitybooks",
+          "feedbackPercentage": "99.8",
+          "feedbackScore": 148102
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/NTAwWDMzMw==/z/32IAAOSwjfhckjod/$_0.JPG?set_id=8800005007"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "0.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "8.99",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/MOTLEY-CRUE-GIRLS-GIRLS-GIRLS-POSTER-24x36-3291/301949288026?hash=item464d947e5a:g:32IAAOSwjfhckjod",
+       "itemLocation": {
+          "postalCode": "24153",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "104966"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "104949"
+          },
+          {
+             "categoryId": "104963"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+        "description": "description here",
+        "specs": "specs here", 
+        "shipping": "shipping here",
+        "reviews": "reviews here",
+       "itemId": "v1|382952358962|0",
+       "title": "Beatles Abbey Road Wooden Record Store Crate ",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/YNYAAOSwwStcyZ2y/s-l225.jpg"
+       },
+       "price": {
+          "value": "37.00",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|382952358962|0",
+       "seller": {
+          "username": "gdme",
+          "feedbackPercentage": "100.0",
+          "feedbackScore": 8406
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/NjYwWDY0MA==/z/YNYAAOSwwStcyZ2y/$_0.JPG?set_id=8800005007"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "9.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "37.00",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/Beatles-Abbey-Road-Wooden-Record-Store-Crate/382952358962?hash=item5929bd4432:g:YNYAAOSwwStcyZ2y",
+       "itemLocation": {
+          "postalCode": "64083",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "432"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "29924"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "104673"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+        "description": "description here",
+        "specs": "specs here", 
+        "shipping": "shipping here",
+        "reviews": "reviews here",
+       "itemId": "v1|223514772130|0",
+       "title": "KISS PAUL STANLEY SIGNED AUTOGRAPHED BOOK BACKSTAGE PASS",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/0jwAAOSw-DRc2fQW/s-l225.jpg"
+       },
+       "price": {
+          "value": "49.00",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|223514772130|0",
+       "seller": {
+          "username": "autgraph",
+          "feedbackPercentage": "100.0",
+          "feedbackScore": 7974
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/OTAwWDE2MDA=/z/0jwAAOSw-DRc2fQW/$_0.JPG?set_id=8800005007"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "0.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "49.00",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/KISS-PAUL-STANLEY-SIGNED-AUTOGRAPHED-BOOK-BACKSTAGE-PASS/223514772130?hash=item340a84c2a2:g:0jwAAOSw-DRc2fQW",
+       "itemLocation": {
+          "postalCode": "01085",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "434"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "29906"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "104930"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "additionalImages": [
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/223514772130_2_0_1/225x225.jpg"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+        "description": "description here",
+        "specs": "specs here", 
+        "shipping": "shipping here",
+        "reviews": "reviews here",
+       "itemId": "v1|392299040519|0",
+       "title": "Vintage 1989 The Beatles APPLAUSE dolls / figures in shea stage collectible ",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/4c4AAOSwij9c4NM3/s-l225.jpg"
+       },
+       "price": {
+          "value": "89.99",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|392299040519|0",
+       "seller": {
+          "username": "smoxman",
+          "feedbackPercentage": "100.0",
+          "feedbackScore": 1237
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/4c4AAOSwij9c4NM3/$_0.JPG?set_id=8800005007"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "20.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "89.99",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/Vintage-1989-The-Beatles-APPLAUSE-dolls-figures-in-shea-stage-collectible/392299040519?hash=item5b56d84f07:g:4c4AAOSwij9c4NM3",
+       "itemLocation": {
+          "postalCode": "92708",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "432"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "29924"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "104673"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "additionalImages": [
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/392299040519_2_0_1/225x225.jpg"
+          },
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/392299040519_3_0_1/225x225.jpg"
+          },
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/392299040519_4_0_1/225x225.jpg"
+          },
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/392299040519_5_0_1/225x225.jpg"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    },
+    {
+        "description": "description here",
+        "specs": "specs here", 
+        "shipping": "shipping here",
+        "reviews": "reviews here",
+       "itemId": "v1|173906395899|0",
+       "title": "JANET JACKSON OFFICIAL METAMORPHOSIS LAS VEGAS 2019 TOUR BOOK PROGRAM RARE",
+       "image": {
+          "imageUrl": "https://i.ebayimg.com/thumbs/images/g/XvcAAOSw2F9c37AH/s-l225.jpg"
+       },
+       "price": {
+          "value": "125.00",
+          "currency": "USD"
+       },
+       "itemHref": "https://api.ebay.com/buy/browse/v1/item/v1|173906395899|0",
+       "seller": {
+          "username": "stuffymerch",
+          "feedbackPercentage": "99.1",
+          "feedbackScore": 1225
+       },
+       "thumbnailImages": [
+          {
+             "imageUrl": "https://i.ebayimg.com/00/s/MTA5NFgxMTI1/z/XvcAAOSw2F9c37AH/$_0.JPG?set_id=880000500F"
+          }
+       ],
+       "shippingOptions": [
+          {
+             "shippingCostType": "FIXED",
+             "shippingCost": {
+                "value": "15.00",
+                "currency": "USD"
+             }
+          }
+       ],
+       "buyingOptions": [
+          "FIXED_PRICE"
+       ],
+       "currentBidPrice": {
+          "value": "125.00",
+          "currency": "USD"
+       },
+       "itemWebUrl": "https://www.ebay.com/itm/JANET-JACKSON-OFFICIAL-METAMORPHOSIS-LAS-VEGAS-2019-TOUR-BOOK-PROGRAM-RARE/173906395899?hash=item287da102fb:g:XvcAAOSw2F9c37AH",
+       "itemLocation": {
+          "postalCode": "10019",
+          "country": "US"
+       },
+       "categories": [
+          {
+             "categoryId": "83181"
+          },
+          {
+             "categoryId": "2329"
+          },
+          {
+             "categoryId": "45100"
+          },
+          {
+             "categoryId": "104762"
+          },
+          {
+             "categoryId": "108765"
+          }
+       ],
+       "additionalImages": [
+          {
+             "imageUrl": "https://galleryplus.ebayimg.com/ws/web/173906395899_2_0_1/225x225.jpg"
+          }
+       ],
+       "adultOnly": false,
+       "compatibilityProperties": []
+    }
+ ]

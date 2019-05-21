@@ -3,34 +3,32 @@ import { connect } from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
-import { fetchDataItem } from '../redux/actions';
-
+import { fetchDataItem, switchTab, clearDataItem } from '../redux/actions';
 
 class ItemInfo extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            activeTabContent: null        
-        }
-    }
-
     componentDidMount = () => {
-        const { id } = this.props.match.params;
-        const { fetchDataItem } = this.props;
+        const { id, tab } = this.props.match.params;
+        /* for the deep linking to work I'm using the tab param on first mounting */
+        const { fetchDataItem, switchTab } = this.props;
+        switchTab(tab);
         fetchDataItem(id);
     }
 
+    componentWillUnmount = () => {
+        const { clearDataItem } = this.props;
+        clearDataItem();
+    }
+
     switchTab(selectedKey) {
-        this.setState({
-            activeTabContent: selectedKey        
-        })
+        const { switchTab } = this.props;
+        switchTab(selectedKey);
+        this.props.history.push(`${selectedKey}`)
     }
 
     render() {
-        const { activeTabContent } = this.state;
-        const { currentItem, data } = this.props;
-        console.log(data)
+        const { currentItem, currentTab } = this.props;
+        const { id } = this.props.match.params;
         if(currentItem) {
             return (
                 <Card className="item-info col-md-8">           
@@ -39,25 +37,25 @@ class ItemInfo extends Component {
                 </Card.Header>
                 <Card.Body>
                     <Card.Title>{ currentItem.title }</Card.Title>
-                    <Nav fill defaultActiveKey="#" onSelect={selectedKey => this.switchTab(selectedKey)}>
+                    <Nav fill activeKey={`${id}/specs`} onSelect={selectedKey => this.switchTab(selectedKey)}>
                         <Nav.Item>
-                            <Nav.Link  href="#" eventKey={ currentItem.title }>Description</Nav.Link>
+                            <Nav.Link eventKey="description">Description</Nav.Link>
                         </Nav.Item>                     
                         <Nav.Item>
-                            <Nav.Link eventKey={ currentItem.Specs }>Specs</Nav.Link>
+                             <Nav.Link eventKey="specs">Specs</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey={ currentItem.shippingOptions }>Shipping</Nav.Link>
+                            <Nav.Link eventKey="shipping">Shipping</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey={ currentItem.Reviews }>Reviews</Nav.Link>
+                            <Nav.Link eventKey="reviews">Reviews</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Card.Body> 
                 <Card.Body>
                     <Card.Text>
-                    { activeTabContent || currentItem.Description }
-                    </Card.Text>  
+                        {currentItem[`${currentTab}`]}
+                    </Card.Text>
                 </Card.Body>    
                 <Button href={currentItem.itemWebUrl} className="buy-btn">Buy Now</Button>         
             </Card>
@@ -69,11 +67,14 @@ class ItemInfo extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    currentItem: state.currentItem
+    currentItem: state.currentItem,
+    currentTab: state.currentTab
   })
 
   const mapDispatchToProps = dispatch => ({
-    fetchDataItem: (id) => dispatch(fetchDataItem(id))
+    fetchDataItem: (id) => dispatch(fetchDataItem(id)),
+    switchTab: (tab) => dispatch(switchTab(tab)),
+    clearDataItem: () => dispatch(clearDataItem())
   })
   
   export default connect(mapStateToProps, mapDispatchToProps) (ItemInfo)
