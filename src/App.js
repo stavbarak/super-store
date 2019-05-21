@@ -1,38 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Navbar, Button } from 'react-bootstrap';
 import './App.css';
 import MainPage from './components/MainPage';
 import ItemInfo from './components/ItemInfo';
+/* import Callback from './Callback/Callback'; */
 
-import Auth from './Auth/Auth.js';
-
-/* const auth = new Auth();
-auth.login(); */
-
-class App extends Component {
-  goTo = (route) => {
-    this.props.history.replace(`/${route}`)
+/* const handleAuthentication = (nextState, replace) => {
+  if (/access_token|id_token|error/.test(nextState.location.hash)) {
+    auth.handleAuthentication();
   }
+}
+ */
 
-  login = () => {
-    this.props.auth.login();
-  }
-
-  logout = () => {
-    this.props.auth.logout();
-  }
-  render(){
-    
+const App = () => {
     return (
       <BrowserRouter>
-          <Switch>
+        <Switch>
             <Route path="/:id/:tab" component={ ItemInfo } />
+            {/* <Route path="/home" component={ MainPage } /> */}
             <Route path="/" component={ MainPage } />
-          </Switch>
-      </BrowserRouter> 
+            {/* <Route path="/callback" render={(props) => {
+                handleAuthentication(props);
+                return <Callback {...props} /> 
+              }}/> */}
+        </Switch>
+      </BrowserRouter>
     )
-  }
 }
 
 export default App;
