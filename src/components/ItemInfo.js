@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
-import { fetchDataItem, switchTab, clearDataItem } from '../redux/actions';
+import { fetchDataItem, switchTab, clearDataItem } from 'redux/actions';
 
 class ItemInfo extends Component {
 

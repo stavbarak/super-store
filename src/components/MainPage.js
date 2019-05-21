@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { InputGroup, FormControl }from 'react-bootstrap';
 import { connect } from 'react-redux';
-import ResultsList from './ResultsList';
-import { fetchData } from '../redux/actions';
+import ResultsList from 'components/ResultsList';
+import { fetchData } from 'redux/actions';
 
 
 class MainPage extends Component {

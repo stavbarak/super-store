@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import MainPage from './components/MainPage';
-import ItemInfo from './components/ItemInfo';
+import MainPage from 'components/MainPage';
+import ItemInfo from 'components/ItemInfo';
 /* import Callback from './Callback/Callback'; */
 
 /* const handleAuthentication = (nextState, replace) => {
