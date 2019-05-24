@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { InputGroup, FormControl }from 'react-bootstrap';
 import { connect } from 'react-redux';
 import ResultsList from 'components/ResultsList';
+import Header from 'components/Header';
 import { fetchData } from 'redux/actions';
+import 'App.css';
 
 
 class MainPage extends Component {
@@ -55,7 +57,8 @@ class MainPage extends Component {
 
     render() {
         return (
-            <div>               
+            <div className="main-app">  
+                <Header />             
                 <div className="searchContainer">
                     <InputGroup className="mb-3">
                         <FormControl
@@ -71,9 +74,10 @@ class MainPage extends Component {
     }
 }
 
+
 const mapStateToProps = (state) => ({
-    data: state.data,
-    loaded: state.loaded
+    data: state.products.data,
+    loaded: state.products.loaded
   })
 
   const mapDispatchToProps = dispatch => ({

@@ -1,16 +1,29 @@
 import fetch from 'cross-fetch'
+import {
+  DATA_FETCHED,
+  CLEAR_DATA_ITEM,
+  ITEM_FETCHED,
+  ITEM_DETAILS_FETCHED,
+  SWITCH_TAB,
+  SIGN_IN,
+  SIGN_OUT
+} from './types';
 
-export const FETCH_DATA = 'FETCH_DATA';
-export const REQUEST_DATA = 'REQUEST_DATA';
-export const DATA_FETCHED = 'DATA_FETCHED';
-export const FETCH_DATA_ITEM = 'FETCH_DATA_ITEM';
-export const CLEAR_DATA_ITEM = 'CLEAR_DATA_ITEM';
-export const ITEM_FETCHED = 'ITEM_FETCHED';
-export const ITEM_DETAILS_FETCHED = 'ITEM_DETAILS_FETCHED';
-export const SWITCH_TAB = 'SWITCH_TAB';
 
 const API_URL = 'http://www.mocky.io/v2/5ce2ea44340000127b7737d7';
 
+export const signIn = userId => {
+  return {
+    type: SIGN_IN,
+    payload: userId
+  };
+};
+
+export const signOut = () => {
+  return {
+    type: SIGN_OUT
+  };
+};
 
 export async function fetchData(dispatch) {
   return await fetch(API_URL, {

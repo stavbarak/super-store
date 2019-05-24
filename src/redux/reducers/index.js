@@ -1,39 +1,8 @@
-import { DATA_FETCHED, ITEM_FETCHED, CLEAR_DATA_ITEM, SWITCH_TAB } from "../actions/";
+import { combineReducers } from 'redux';
+import authReducer from './authReducer';
+import productsReducer from './productsReducer';
 
-const InitialState = {
-    data: [],
-    loaded: false,
-    currentItem: null,
-    currentTab: 'description'
-}
-
-const rootReducer = (state = InitialState, action) => {
-    switch(action.type) {
-        case DATA_FETCHED:
-            return {
-                ...state,
-                data: action.payload,
-                loaded: true
-            }
-        case ITEM_FETCHED:
-            return {
-                ...state,
-                currentItem: action.payload
-            }    
-
-        case CLEAR_DATA_ITEM:
-            return {
-                ...state,
-                currentItem: null
-            }
-        case SWITCH_TAB:
-            return {
-                ...state,
-                currentTab: action.payload
-            }      
-        default:
-            return state;
-    }
-}
-
-export default rootReducer;
+export default combineReducers({
+  auth: authReducer,
+  products: productsReducer
+});

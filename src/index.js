@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import store from './redux/configureStore';
+import Root from './Root';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
-import App from 'App';
-/* import AppWrapper from './AppWrapper'; */
+import MainPage from 'components/MainPage';
+import ItemInfo from 'components/ItemInfo';
+
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>, 
+    <Root >
+        <BrowserRouter>
+            <Switch>
+                <Route path="/:id/:tab" component={ ItemInfo } />
+                <Route path="/" component={ MainPage } />
+            </Switch>
+      </BrowserRouter>
+    </Root>,
+    
     
     document.getElementById('root'));
 

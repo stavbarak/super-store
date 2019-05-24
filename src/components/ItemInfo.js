@@ -67,8 +67,8 @@ class ItemInfo extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    currentItem: state.currentItem,
-    currentTab: state.currentTab
+    currentItem: state.products.currentItem,
+    currentTab: state.products.currentTab
   })
 
   const mapDispatchToProps = dispatch => ({

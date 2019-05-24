@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.main-app {
+  padding: 10px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -56,6 +60,21 @@
 .buy-btn {
     width: 236px;
     margin: 10px auto;
+}
+
+.brand {
+  font-size: 30px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.buttonContent {
+  margin: 0 10px;
 }
 
 @keyframes App-logo-spin {
