@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Button from 'react-bootstrap/Button';
+import AuthButton from 'components/AuthButton';
 import { signIn, signOut } from 'redux/actions';
 
 class GoogleAuth extends React.Component {
@@ -44,17 +44,11 @@ class GoogleAuth extends React.Component {
       return null;
     } else if (isSignedIn) {
       return (
-        <Button variant="danger" onClick={this.onSignOutClick}> 
-            <span className="buttonContent"><i className="fab fa-google"></i></span>
-            <span className="buttonContent"> Sign Out</span> 
-        </Button> 
+        <AuthButton variant="danger" onAuthClick={this.onSignOutClick} text = "Sign Out" />
       );
     } else {
       return (
-        <Button onClick={this.onSignInClick}> 
-            <span className="buttonContent"><i className="fab fa-google"></i></span>
-            <span className="buttonContent"> Sign In with Google</span> 
-        </Button> 
+        <AuthButton variant="primary" onAuthClick={this.onSignInClick} text = "Sign In with Google" />
       );
     }
   }
