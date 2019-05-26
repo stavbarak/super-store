@@ -1,15 +1,19 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import thunkMiddleware from 'redux-thunk';
+import { createStore, applyMiddleware, compose } from 'redux';
+import reduxThunk from 'redux-thunk';
 /* import store from './redux/configureStore'; */
 import reducers from 'redux/reducers';
 
-const createStoreWithMiddleware = applyMiddleware(thunkMiddleware)(createStore);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  reducers,
+  composeEnhancers(applyMiddleware(reduxThunk))
+);
 
 export default({ children }) => {
     return (
-    <Provider store={createStoreWithMiddleware(reducers)} >
+    <Provider store={store} >
        { children }
     </Provider>
     )
