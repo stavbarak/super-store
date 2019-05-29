@@ -4,6 +4,8 @@ import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import { fetchDataItem, switchTab, clearDataItem } from 'redux/actions';
+import requireAuth from 'components/requireAuth';
+
 
 class ItemInfo extends Component {
 
@@ -77,4 +79,5 @@ const mapStateToProps = (state) => ({
     clearDataItem: () => dispatch(clearDataItem())
   })
   
-  export default connect(mapStateToProps, mapDispatchToProps) (ItemInfo)
+/*   export default connect(mapStateToProps, mapDispatchToProps) (ItemInfo) */
+export default connect(mapStateToProps, mapDispatchToProps)(requireAuth(ItemInfo));

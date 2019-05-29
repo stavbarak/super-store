@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from "react-router";
 import AuthButton from 'components/AuthButton';
 import { signIn, signOut } from 'redux/actions';
 
@@ -24,7 +25,9 @@ class GoogleAuth extends React.Component {
   onAuthChange = isSignedIn => {
     const { signIn, signOut } = this.props; 
     if (isSignedIn) {
+      
       signIn(this.auth.currentUser.get().getId());
+      this.props.history.push('/store');
     } else {
       signOut();
     }
@@ -65,4 +68,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   { signIn, signOut }
-)(GoogleAuth);
+)(withRouter(GoogleAuth));

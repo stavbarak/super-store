@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { InputGroup, FormControl }from 'react-bootstrap';
 import { connect } from 'react-redux';
 import ResultsList from 'components/ResultsList';
-import Header from 'components/Header';
 import { fetchData } from 'redux/actions';
+import requireAuth from 'components/requireAuth';
 import 'App.css';
 
 
-class MainPage extends Component {
+class Store extends Component {
 
     constructor(props) {
         super(props)
@@ -58,7 +58,7 @@ class MainPage extends Component {
     render() {
         return (
             <div className="main-app">  
-                <Header />             
+                          
                 <div className="searchContainer">
                     <InputGroup className="mb-3">
                         <FormControl
@@ -83,5 +83,6 @@ const mapStateToProps = (state) => ({
   const mapDispatchToProps = dispatch => ({
     fetchData: () => dispatch(fetchData)
   })
+
   
-  export default connect(mapStateToProps, mapDispatchToProps) (MainPage)
+  export default connect(mapStateToProps, mapDispatchToProps)(requireAuth(Store));
